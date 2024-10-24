@@ -1,0 +1,620 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+.home {
+	position: fixed;
+    bottom: 20px;
+	left: 45%;
+	z-index: 1000;
+	background-color: #fff;
+	opacity: 0.8;
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+.home i {
+	color: #444; 
+    font-size: 60px; 
+}
+
+header {
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header h1 {
+	left: 20px;
+	display: inline-block;
+	margin-right: 40%;
+}
+
+header h1 a {
+	font: bold 40px/1 "Jua"; 
+	color: #444;
+	margin-right: 5px;
+}
+
+header h1 i {
+    color: #444; 
+    font-size: 30px; 
+}
+
+#menu-list {
+	list-style: none;
+}
+
+#menu-list li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#menu-list li a {
+	font: bold 25px/1 "Jua";
+	color: #555;
+}
+
+#menu-list li a:hover {
+	background: #555;
+	color: #fff;
+}
+
+/* visual */
+main {
+    width: 95%;
+    height: 87%;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+main .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    position: absolute;
+    top: 0; /* 영상 위치 설정 */
+    left: 0; /* 영상 위치 설정 */
+    z-index: 1; /* 영상의 z-index 설정 */
+}
+
+main .inner {
+    position: relative; /* 상대 위치 설정 */
+    z-index: 2; /* 텍스트의 z-index 설정 */
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+main .inner h1 {
+    font: normal 60px/1 "Jua";
+    color: #fff;
+    text-shadow: 2px 2px 5px #111;
+    line-height: 100px;
+}
+
+section {
+    width: 95%;
+    height: 100%;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+section .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: 1;
+}
+
+section:nth-of-type(odd) .inner {
+    position: relative; /* 상대 위치 설정 */
+    z-index: 2; /* 텍스트의 z-index 설정 */
+	padding-top: 5%;
+	padding-right: 5%;
+	text-align: right;
+}
+
+section:nth-of-type(even) .inner {
+    position: relative; /* 상대 위치 설정 */
+    z-index: 2; /* 텍스트의 z-index 설정 */
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+section .inner h1 {
+    font: normal 60px/1 "Jua";
+    color: #fff;
+    text-shadow: 2px 2px 5px #111;
+    line-height: 100px;
+	padding-bottom: 15px;
+}
+
+section .inner p {
+	font: normal 35px/1 "Jua";
+    color: #fff;
+    text-shadow: 2px 2px 5px #111;
+    line-height: 50px;
+	padding-bottom: 15px;
+}
+
+section .inner .more-btn {
+	box-sizing: border-box;
+	padding: 10px 30px;
+	background-color: #352b1d;
+	border-radius: 30px;
+	font: normal 25px/1 "Jua";
+	color: #fff;
+	box-shadow: 2px 2px 5px #111;
+	line-height: 50px;
+}
+
+section .inner .more-btn:hover {
+	background-color: #fff;
+	color: #111;
+	transition-duration: 0.2s;
+}
+
+@media screen and (max-width: 1250px) {
+	header {
+		margin: 0 auto;
+		width: 100%;
+		height: 10%;
+		border-bottom: 1px solid #ddd;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	header h1 {
+		left: 10px;
+		display: inline-block;
+		margin-right: 20%;
+	}
+	
+	header h1 a {
+		font: bold 30px/1 "Jua"; 
+		color: #444;
+	}
+
+	header h1 i {
+		color: #444; 
+		font-size: 20px; 
+	}
+
+	
+	#menu-list {
+		list-style: none;
+	}
+
+	#menu-list li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	#menu-list li a {
+		font: bold 20px/1 "Jua";
+		color: #555;
+	}
+
+	#menu-list li a:hover {
+		background: #555;
+		color: #fff;
+	}
+	
+	/* visual */
+	main {
+		width: 100%;
+		height: 60%;
+		background: #000;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	main .video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.9;
+		position: absolute;
+		top: 0; /* 영상 위치 설정 */
+		left: 0; /* 영상 위치 설정 */
+		z-index: 1; /* 영상의 z-index 설정 */
+	}
+	
+	main .inner {
+		position: relative; /* 상대 위치 설정 */
+		z-index: 2; /* 텍스트의 z-index 설정 */
+		padding-top: 5%;
+		padding-left: 5%;
+	}
+	
+	main .inner h1 {
+		font: normal 30px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 45px;
+	}
+	
+	section {
+		width: 100%;
+		height: 60%;
+		background: #000;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	section .img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		left: 0; 
+		z-index: 1;
+	}
+	
+	section .inner {
+		position: relative; /* 상대 위치 설정 */
+		z-index: 2; /* 텍스트의 z-index 설정 */
+		padding-top: 5%;
+		padding-left: 5%;
+	}
+	
+	section .inner h1 {
+		font: normal 30px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 45px;
+		padding-bottom: 10px;
+	}
+	
+	section .inner p {
+		font: normal 20px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 30px;
+		padding-bottom: 10px;
+	}
+	
+	section .inner .more-btn {
+		box-sizing: border-box;
+		padding: 5px 15px;
+		background-color: #352b1d;
+		border-radius: 20px;
+		font: normal 15px/1 "Jua";
+		color: #fff;
+		box-shadow: 1px 1px 3px #111;
+		line-height: 25px;
+	}
+	
+	section .inner .more-btn:hover {
+		background-color: #fff;
+		color: #111;
+		transition-duration: 0.2s;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	header {
+		margin: 0 auto;
+		width: 100%;
+		height: 10%;
+		border-bottom: 1px solid #ddd;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	header h1 {
+		left: 10px;
+		display: inline-block;
+		margin-right: 10%;
+	}
+	
+	header h1 a {
+		font: bold 22px/1 "Jua"; 
+		color: #444;
+	}
+
+	header h1 i {
+		color: #444; 
+		font-size: 15px; 
+	}
+
+	
+	#menu-list {
+		list-style: none;
+	}
+
+	#menu-list li {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	
+	#menu-list li a {
+		font: bold 17px/1 "Jua";
+		color: #555;
+	}
+
+	#menu-list li a:hover {
+		background: #555;
+		color: #fff;
+	}
+	
+	/* visual */
+	main {
+		width: 100%;
+		height: 50%;
+		background: #000;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+	
+	main .video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.9;
+		position: absolute;
+		top: 0; /* 영상 위치 설정 */
+		left: 0; /* 영상 위치 설정 */
+		z-index: 1; /* 영상의 z-index 설정 */
+	}
+	
+	main .inner {
+		position: relative; /* 상대 위치 설정 */
+		z-index: 2; /* 텍스트의 z-index 설정 */
+		padding-top: 5%;
+		padding-left: 5%;
+	}
+	
+	main .inner h1 {
+		font: normal 25px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 40px;
+	}
+	
+	section {
+		width: 100%;
+		height: 50%;
+		background: #000;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+	
+	section .img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		left: 0; 
+		z-index: 1;
+	}
+	
+	section .inner {
+		position: relative; /* 상대 위치 설정 */
+		z-index: 2; /* 텍스트의 z-index 설정 */
+		padding-top: 5%;
+		padding-left: 5%;
+	}
+	
+	section .inner h1 {
+		font: normal 25px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 40px;
+		padding-bottom: 5px;
+	}
+	
+	section .inner p {
+		font: normal 15px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 25px;
+		padding-bottom: 5px;
+	}
+	
+	section .inner .more-btn {
+		box-sizing: border-box;
+		padding: 5px 15px;
+		background-color: #352b1d;
+		border-radius: 20px;
+		font: normal 12px/1 "Jua";
+		color: #fff;
+		box-shadow: 1px 1px 3px #111;
+		line-height: 20px;
+	}
+	
+	section .inner .more-btn:hover {
+		background-color: #fff;
+		color: #111;
+		transition-duration: 0.2s;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		margin: 0 auto;
+		width: 100%;
+		height: 10%;
+		border-bottom: 1px solid #ddd;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	header h1 {
+		display: inline-block;
+	}
+	
+	header h1 a {
+		font: bold 22px/1 "Jua"; 
+		color: #444;
+	}
+
+	header h1 i {
+		color: #444; 
+		font-size: 15px; 
+	}
+
+	
+	#menu-list {
+		display: inline-block;
+		list-style: none;
+	}
+
+	#menu-list li {
+		margin-right: 5px;
+	}
+	
+	#menu-list li a {
+		font: bold 17px/1 "Jua";
+		color: #555;
+	}
+
+	#menu-list li a:hover {
+		background: #555;
+		color: #fff;
+	}
+	
+	/* visual */
+	main {
+		width: 100%;
+		height: 30%;
+		background: #000;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+	
+	main .video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.9;
+		position: absolute;
+		top: 0; /* 영상 위치 설정 */
+		left: 0; /* 영상 위치 설정 */
+		z-index: 1; /* 영상의 z-index 설정 */
+	}
+	
+	main .inner {
+		position: relative; /* 상대 위치 설정 */
+		z-index: 2; /* 텍스트의 z-index 설정 */
+		padding-top: 5%;
+		padding-left: 5%;
+	}
+	
+	main .inner h1 {
+		font: normal 25px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 40px;
+	}
+	
+	section {
+		width: 100%;
+		height: 30%;
+		background: #000;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+	
+	section .img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		left: 0; 
+		z-index: 1;
+	}
+	
+	section .inner {
+		position: relative; /* 상대 위치 설정 */
+		z-index: 2; /* 텍스트의 z-index 설정 */
+		padding-top: 5%;
+		padding-left: 5%;
+	}
+	
+	section .inner h1 {
+		font: normal 25px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 40px;
+		padding-bottom: 5px;
+	}
+	
+	section .inner p {
+		font: normal 15px/1 "Jua";
+		color: #fff;
+		text-shadow: 1px 1px 3px #111;
+		line-height: 25px;
+		padding-bottom: 5px;
+	}
+	
+	section .inner .more-btn {
+		box-sizing: border-box;
+		padding: 5px 15px;
+		background-color: #352b1d;
+		border-radius: 20px;
+		font: normal 12px/1 "Jua";
+		color: #fff;
+		box-shadow: 1px 1px 3px #111;
+		line-height: 20px;
+	}
+	
+	section .inner .more-btn:hover {
+		background-color: #fff;
+		color: #111;
+		transition-duration: 0.2s;
+	}
+}
